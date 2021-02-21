@@ -48,5 +48,9 @@ for x in range(len(sum)-1):
     else:
         k += 1
         stats[k] += 1
+athr=0
 for x in range(80):
-    print("O arithmos",x+1,"emfanistike",stats[x],"fores")
+    #Athrisma stoixeiwn gia M.O
+    athr += stats[x]
+for x in range(80):
+    print("O arithmos",x+1,"emfanistike",stats[x]/athr,"%")
